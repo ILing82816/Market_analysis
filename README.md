@@ -39,5 +39,5 @@ I tried six different models:
 ## Model performance
 The LightGBM model have more good fit on the train and validation sets.
 * **LightGBM:** MCC on validation sets = 0.53
-![alt text](https://github.com/ILing82816/ds_disease_proj/blob/master/xgboost.png "XGBoost")  
+![alt text](https://github.com/ILing82816/Market_analysis/blob/master/compare.png "pipeline")  
  
