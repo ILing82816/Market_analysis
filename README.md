@@ -23,9 +23,9 @@ I needed to clean it up so that it was usable for our model. I made the followin
 * Target variables: there are imbalance data
 ![alt text](https://github.com/ILing82816/Market_analysis/blob/master/target.png "target")
 * Feature Distribution
-![alt text](https://github.com/ILing82816/Market_analysis/blob/master/target.png "distribution")
+![alt text](https://github.com/ILing82816/Market_analysis/blob/master/distribution.PNG "distribution")
 * Category variable (country code)
-![alt text](https://github.com/ILing82816/ds_disease_proj/blob/master/var_corr.png "correlation")    
+![alt text](https://github.com/ILing82816/ds_disease_proj/blob/master/var_corr.png "category")    
 
 ## Model Building  
 I tried six different models and evaluated them using ROC curve. I chose ROC curve because it is relatively easy to interpret and check overfitting for this type of model.  
