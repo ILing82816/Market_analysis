@@ -21,10 +21,10 @@ I needed to clean it up so that it was usable for our model. I made the followin
 
 ## EDA
 * Target variables: there are imbalance data
-![alt text](https://github.com/ILing82816/ds_disease_proj/blob/master/var_corr.png "correlation")
-* 
-I looked at the normality of the data, the correlation with the various variables. Below are a few highlights from the figures.
-Correlation with other features:
+![alt text](https://github.com/ILing82816/Market_analysis/blob/master/target.png "target")
+* Feature Distribution
+![alt text](https://github.com/ILing82816/Market_analysis/blob/master/target.png "distribution")
+* Category variable (country code)
 ![alt text](https://github.com/ILing82816/ds_disease_proj/blob/master/var_corr.png "correlation")    
 
 ## Model Building  
