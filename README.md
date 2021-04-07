@@ -20,29 +20,24 @@ I needed to clean it up so that it was usable for our model. I made the followin
 * fill the missing variable by mean or mode.
 
 ## EDA
-* Target variables: there are imbalance data
+* Target variables: there are imbalance data  
 ![alt text](https://github.com/ILing82816/Market_analysis/blob/master/target.png "target")
-* Feature Distribution
+* Feature Distribution  
 ![alt text](https://github.com/ILing82816/Market_analysis/blob/master/distribution.PNG "distribution")
 * Category variable (country code)
-![alt text](https://github.com/ILing82816/ds_disease_proj/blob/master/var_corr.png "category")    
+![alt text](https://github.com/ILing82816/Market_analysis/blob/master/country_code.PNG "category")    
 
 ## Model Building  
-I tried six different models and evaluated them using ROC curve. I chose ROC curve because it is relatively easy to interpret and check overfitting for this type of model.  
+I tried six different models and evaluated them using Matthews correlation coefficient (MMC).  
 I tried six different models:  
-* **Logistic Regression, KNN, Naive Bayes** - Baseline for the model
-* **XGBoost, LightGBM** - Because of the ensemble model improving weak classifiers, I thought XGBoost and LightGBM would be effective.
-* **Random Forest** - Because of larger variance of XGBoost and LightGBM, I thought random forest would be hlpful when the previous model easy to overfit.   
+* **Logistic Regression** - Baseline for the model
+* **Logistic Regression with elatic net** - Add regularization term.
+* **Naive Bayes** - linear model.
+* **Random Forest** - Use more complexity non-linear model.
+* **XGBoost, LightGBM** - Because of the ensemble model improving weak classifiers, I thought XGBoost and LightGBM would be effective.   
 
 ## Model performance
-The Random Forest model have more good fit on the train and validation sets.
-* **Random Forest:** Accuracy on train sets = 81%, Accuracy on validation sets = 80%
-![alt text](https://github.com/ILing82816/ds_disease_proj/blob/master/random.png "random")  
-* **Logistic Regression:** Accuracy on train and validation sets = 78%
-* **KNN:** Accuracy on train sets = 75%, Accuracy on validation sets = 72%
-* **Naive Bayes:** Accuracy on train sets = 82%, Accuracy on validation sets = 78%
-![alt text](https://github.com/ILing82816/ds_disease_proj/blob/master/Naive%20Bayes.png "Naive")   
-* **XGBoost:** Accuracy on train sets = 82%, Accuracy on validation sets = 80%
+The LightGBM model have more good fit on the train and validation sets.
+* **LightGBM:** MCC on validation sets = 0.53
 ![alt text](https://github.com/ILing82816/ds_disease_proj/blob/master/xgboost.png "XGBoost")  
-* **LightGBM:** Accuracy on train sets = 83%, Accuracy on validation sets = 80%
-![alt text](https://github.com/ILing82816/ds_disease_proj/blob/master/lightgbm.png "LightGBM")  
+ 
